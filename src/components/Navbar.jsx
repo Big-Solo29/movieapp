@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="pt-2 pb-3 space-y-1 sm:px-3 block px-3 py-2 rounded-md text-base font-medium
+        <div className="pt-4 pb-3 space-y-1 sm:px-3 block px-3 py-2 rounded-md text-base font-medium
                       text-white hover:bg-gray-700 hover:no-underline
                       transition-all duration-300 ease-in-out
                       transform hover:scale-105">
@@ -70,7 +70,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/favorites"
+            to="/favourites"
             onClick={() => setIsOpen(false)}
             className="text-white hover:bg-gray-700 hover:no-underline block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
           >
