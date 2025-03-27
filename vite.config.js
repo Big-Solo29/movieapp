@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.VITE_BASE_PATH || "/movieapp",
   css: {
     postcss: {
       plugins: [tailwindcss(), autoprefixer()],
